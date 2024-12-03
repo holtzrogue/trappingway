@@ -110,7 +110,7 @@ impl Job {
             Job::Gunbreaker => "<:gunbreaker:1313310646376468500>".to_string(),
             Job::Paladin => "<:paladin:1313310727796162560>".to_string(),
             Job::Gladiator => "<:gladiator:1313310643616485397>".to_string(),
-            Job::DarkKnight => "<:darkknight:985322469873303624>".to_string(),
+            Job::DarkKnight => "<:darkknight:1313310578663624725>".to_string(),
             Job::Warrior => "<:warrior:1313310816367411200>".to_string(),
             Job::Marauder => "<:marauder:1313310659500441620>".to_string(),
             Job::Scholar => "<:scholar:1313310742816096327>".to_string(),
