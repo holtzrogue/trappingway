@@ -52,7 +52,7 @@ fn get_embed(data_center: String, duty_name: String, listings: Vec<&xiv_util::PF
         }
 
         // embed.field("\u{200b}", "\u{200b}", true);
-        embed.field(format!("<:ffxivstopwatch:987141580869730324> {}", listing.last_updated), format!("<:ffxivhourglass:987141579879878676> {}", listing.expires_in), true);
+        embed.field(format!("<:ffxivstopwatch:987141580869730324> {}", listing.last_updated), format!("<:ffxivhourglass:1313310653045276703> {}", listing.expires_in), true);
     }
 
     if listings.len() == 0 {
