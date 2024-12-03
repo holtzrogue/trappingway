@@ -84,25 +84,26 @@ impl Slot {
             let contains_dps = self.available_jobs.iter().any(|x| x.get_role() == Role::DPS);
 
             if contains_tank && contains_healer && contains_dps {
-    "<:tankhealerdps:1313310811497824306>".to_string()
-} else if contains_tank && contains_healer && !contains_dps {
-    "<:tankhealer:1313310808838635595>".to_string()
-} else if contains_tank && !contains_healer && contains_dps {
-    "<:tankdps:1313310807278358619>".to_string()
-} else if contains_tank && !contains_healer && !contains_dps {
-    "<:tank:1313310805110030346".to_string()
-} else if !contains_tank && contains_healer && contains_dps {
-    "<:healerdps:1313310650788872274>".to_string()
-} else if !contains_tank && contains_healer && !contains_dps {
-    "<:healer:1313310648599318650>".to_string()
-} else if !contains_tank && !contains_healer && contains_dps {
-    "<:dps:985322470326280213>".to_string()
-} else {
-    "".to_string()
+                "<:tankhealerdps:1313310811497824306>".to_string()
+            } else if contains_tank && contains_healer && !contains_dps {
+                "<:tankhealer:1313310808838635595>".to_string()
+            } else if contains_tank && !contains_healer && contains_dps {
+                "<:tankdps:1313310807278358619>".to_string()
+            } else if contains_tank && !contains_healer && !contains_dps {
+                "<:tank:1313310805110030346>".to_string()
+            } else if !contains_tank && contains_healer && contains_dps {
+                "<:healerdps:1313310650788872274>".to_string()
+            } else if !contains_tank && contains_healer && !contains_dps {
+                "<:healer:1313310648599318650>".to_string()
+            } else if !contains_tank && !contains_healer && contains_dps {
+                "<:dps:1313310580932743208>".to_string()
+            } else {
+                "".to_string()
             }
         }
     }
 }
+
 
 impl Job {
     pub fn get_emoji_string(&self) -> String {
